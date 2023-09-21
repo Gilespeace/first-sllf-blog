@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@plugin-web-update-notification/vite": "^1.6.5",
+    "vitepress": "1.0.0-rc.8"
+  },
+  "dependencies": {
+    "@vite-pwa/vitepress": "^0.2.0",
+    "vue": "^3.3.4"
+  }
+}
