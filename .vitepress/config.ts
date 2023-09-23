@@ -52,13 +52,13 @@ export default withPwa(
     title: '微信小程序',
     titleTemplate: '基础+项目实战',
     description: '原生微信小程序项目实战',
-    base: '/mini-app-note/',
+    base: '/FIRST-SELF-BOLG/',
     head: [
       [
         'link',
         {
           rel: 'icon',
-          href: '/mini-app-note/favicon.ico',
+          href: '/jpg.ico',
         },
       ],
       // 大图预览插件资源
@@ -71,7 +71,7 @@ export default withPwa(
     lastUpdated: true,
     themeConfig: {
       logo: '/logo.jpg',
-      siteTitle: '微信小程序',
+      siteTitle: '个人博客',
       returnToTopLabel: '返回顶部',
       search: {
         provider: 'local',
@@ -85,7 +85,6 @@ export default withPwa(
               displayDetails: '展开详情',
               noResultsText: '无法找到相关结果',
               resetButtonTitle: '清除查询条件',
-
               footer: {
                 selectText: '选择',
                 navigateText: '切换',
@@ -104,24 +103,24 @@ export default withPwa(
       },
       footer: {
         message: '根据 MIT 许可证发布',
-        copyright: `Copyright © ${new Date().getFullYear()} 黑马程序员`,
+        copyright: `Copyright © ${new Date().getFullYear()} HAIBO`,
       },
       // https://vitepress.dev/reference/default-theme-config
       editLink: {
-        pattern: 'https://gitee.com/Megasu/mini-app-note/edit/master/:path',
+        pattern: 'https://github.com/Gilespeace/first-sllf-blog/issues',
         text: '帮我修改',
       },
       lastUpdatedText: '最近更新',
       nav: [
-        { text: '小程序基础', link: '/mini-app/' },
-        { text: '享+生活', link: '/enjoy-plus/' },
-        { text: '智慧商城项目', link: '/wisdom-shop/' },
+        { text: '🚙 面试题分享', link: '/mini-app/' },
+        { text: '🥇一些知识点的总结', link: '/enjoy-plus/' },
+        { text: '🥈工作中遇到的问题', link: '/wisdom-shop/' },
       ],
 
       sidebar: {
-        '/mini-app/': [
+        '/QuestionBank/': [
           {
-            text: '微信小程序',
+            text: '🚙 面试题分享',
             items: [
               { text: '前言', link: '/mini-app/' },
               { text: '基础第一天', link: '/mini-app/day01' },
@@ -173,31 +172,30 @@ export default withPwa(
           },
         ],
       },
-
-      socialLinks: [{ icon: 'github', link: 'https://gitee.com/Megasu/wisdom-shop-mini-app/' }],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/Gilespeace/first-sllf-blog' }],
     },
     // pwa 配置
     pwa: {
       outDir: '.vitepress/dist', // 输出目录
       registerType: 'autoUpdate', // 注册类型为自动更新
       manifest: {
-        id: 'mini-app-note-itheima', // 清单 ID
-        name: 'mini-app-note-itheima', // 应用名称
-        short_name: 'mini-app-note', // 应用的短名称
-        description: 'mini-app-note by itheima', // 应用的描述
+        id: 'FIRST-SELF-BOLG', // 清单 ID
+        name: 'FIRST-SELF-BOLG', // 应用名称
+        short_name: 'FIRST-SELF-BOLG', // 应用的短名称
+        description: 'FIRST-SELF-BOLG', // 应用的描述
         theme_color: '#ffffff', // 主题颜色
         background_color: '#ffffff',
         display: 'standalone',
         icons: [
           {
-            src: '/mini-app-note/logo-192x192.png', // 图标路径
+            src: '/.jpg', // 图标路径
             sizes: '192x192', // 图标尺寸
-            type: 'image/png', // 图标类型
+            type: 'image/jpg', // 图标类型
           },
           {
-            src: '/mini-app-note/logo-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            src: '/.jpg',
+            sizes: '192x192',
+            type: 'image/jpg',
           },
         ],
       },

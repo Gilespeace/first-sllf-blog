@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🚙 面试题分享
-      link: /mini-app/
+      link: /QuestionBank/
     - theme: alt
       text: 🥇一些知识点的总结
       link: /enjoy-plus/
